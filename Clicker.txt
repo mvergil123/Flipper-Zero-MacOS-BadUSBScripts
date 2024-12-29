@@ -1,0 +1,20 @@
+REM Title: Clicker 
+REM Description: Will navigate to cookie clicker and will click 100 times, giving you 100 cookies.
+REM Install: Make sure to run brew install cliclick 
+REM Target: macOS 11.0+
+REM
+GUI SPACE
+DELAY 500
+STRING terminal
+ENTER
+DELAY 1000
+STRING open 'https://orteil.dashnet.org/cookieclicker/'
+ENTER
+DELAY 80000
+GUI SPACE
+DELAY 500
+STRING terminal
+ENTER
+DELAY 1000
+STRING for i in {1..100}; do cliclick c:200,400; sleep 0.01; done
+ENTER

@@ -1,0 +1,11 @@
+REM Title: Chrome Spammer
+REM Description: Will open up 10 new chrome windows
+REM Target: macOS 11.0+
+REM
+GUI SPACE
+DELAY 1000
+STRING terminal
+ENTER
+DELAY 1000
+STRING for i in {1..10}; do open -na "Google Chrome"; sleep 0.1; done
+ENTER
