@@ -1,5 +1,5 @@
 REM Title: IP Catcher
-REM Description: Will grab the users IP address and store it in a .txt file in current directory
+REM Description: Will grab the users IP address and store it in a .txt file in the Desktop directory
 REM Target: macOS 11.0+
 REM
 GUI SPACE
