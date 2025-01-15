@@ -1,5 +1,5 @@
 REM Title: GitHub 
-REM Description: Will navigate you to my GitHub account
+REM Description: Will navigate you to my GitHub account (Shameless plug :))
 REM Target: macOS 11.0+
 REM
 GUI SPACE
