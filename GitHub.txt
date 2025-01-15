@@ -1,0 +1,11 @@
+REM Title: GitHub 
+REM Description: Will navigate you to my GitHub account
+REM Target: macOS 11.0+
+REM
+GUI SPACE
+DELAY 500
+STRING terminal
+ENTER
+DELAY 1000
+STRING open 'https://github.com/mvergil123'
+ENTER
