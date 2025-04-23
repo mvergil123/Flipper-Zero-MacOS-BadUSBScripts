@@ -1,5 +1,5 @@
 REM Title: Reverse shell python script write
-REM Description: Will write a reverse shell python script and save it onto the victim's desktop and when ran, will connect to my kali linux VM
+REM Description: Will write a reverse shell python script and save it onto the victim's desktop and when ran, will connect to a VM that is listening on the specific port using netcat.
 REM Target: macOS 11.0+
 REM
 REM Open Terminal
